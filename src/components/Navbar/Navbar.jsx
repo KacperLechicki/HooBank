@@ -2,6 +2,7 @@ import React from 'react';
 
 import { close, logo, menu } from '../../assets';
 import { navLinks } from '../../constants';
+import './Navbar.scss';
 
 const Navbar = () => {
 	const [toggle, setToggle] = React.useState(false);
@@ -19,7 +20,7 @@ const Navbar = () => {
 				{navLinks.map((navLink, index) => (
 					<li
 						key={index}
-						className={`font-poppins font-normal cursor-pointer text-[16px] ${
+						className={`nav-item font-poppins font-normal cursor-pointer text-[16px] ${
 							index === navLinks.length - 1 ? 'mr-0' : 'mr-10'
 						} text-white`}>
 						<a href={`#${navLink.id}`}>{navLink.title}</a>
@@ -38,8 +39,8 @@ const Navbar = () => {
 				<div
 					className={`${
 						toggle ? 'flex' : 'hidden'
-					} p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
-					<ul className='list-none flex flex-col justify-end items-center flex-1'>
+					} p-6 bg-primary border border-white absolute top-20 right-0 mx-4 my-2 min-w-[280px] rounded-xl sidebar z-[5]`}>
+					<ul className='list-none flex flex-col justify-end items-center flex-1 '>
 						{navLinks.map((navLink, index) => (
 							<li
 								key={index}

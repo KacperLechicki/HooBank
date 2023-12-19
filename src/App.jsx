@@ -1,10 +1,10 @@
 // import React from 'react';
 import styles from './styles';
 
-import { Navbar } from './components';
+import { Navbar, Hero, Stats } from './components';
 
 const App = () => (
-	<div className='bg-primary w-full overflow-hidden'>
+	<div className='bg-primary w-full overflow-x-hidden'>
 		<div className={`${styles.paddingX} ${styles.flexCenter}`}>
 			<div className={`${styles.boxWidth}`}>
 				<Navbar />
@@ -12,11 +12,15 @@ const App = () => (
 		</div>
 
 		<div className={`${styles.flexStart} bg-primary`}>
-			<div className={`${styles.boxWidth}`}>HERO</div>
+			<div className={`${styles.boxWidth}`}>
+				<Hero />
+			</div>
 		</div>
 
 		<div className={`${styles.flexStart} ${styles.paddingX} bg-primary`}>
-			<div className={`${styles.boxWidth}`}>STATS</div>
+			<div className={`${styles.boxWidth}`}>
+				<Stats />
+			</div>
 		</div>
 	</div>
 );

@@ -1,0 +1,47 @@
+.getStartedButton {
+	position: relative;
+
+	@media (min-width: 1024px) {
+		&:hover {
+			.arrow-animation {
+				animation: arrowAnimation 1.5s infinite;
+			}
+		}
+
+		&:hover::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			border: 2px solid rgba($color: white, $alpha: 0.5);
+			border-radius: 50%;
+			animation: borderAnimation 2s infinite;
+		}
+	}
+}
+
+@keyframes borderAnimation {
+	0% {
+		border-color: white;
+	}
+	50% {
+		border-color: transparent;
+	}
+	100% {
+		border-color: white;
+	}
+}
+
+@keyframes arrowAnimation {
+	0% {
+		transform: translate(0, 0);
+	}
+	50% {
+		transform: translate(5px, -5px);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
+}
