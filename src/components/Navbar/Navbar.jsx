@@ -7,6 +7,14 @@ import './Navbar.scss';
 const Navbar = () => {
 	const [toggle, setToggle] = React.useState(false);
 
+	React.useEffect(() => {
+		if (toggle) {
+			document.body.style.overflow = 'hidden';
+		} else {
+			document.body.style.overflow = 'auto';
+		}
+	}, [toggle]);
+
 	return (
 		<nav className='w-full flex py-6 justify-between items-center navbar'>
 			<img
@@ -28,14 +36,19 @@ const Navbar = () => {
 				))}
 			</ul>
 
-			<div className='sm:hidden flex flex-1 justify-end items-center'>
+			<div className='sm:hidden flex flex-1 justify-end items-center z-[5]'>
 				<img
 					src={toggle ? close : menu}
 					alt='menu image'
-					className='w-[20px] h-[20px] object-contain'
+					className='w-[20px] h-[20px] object-contain z-[5]'
 					onClick={() => setToggle((prev) => !prev)}
 				/>
 
+				<div
+					className={`fixed inset-0 bg-black opacity-50 ${
+						toggle ? 'block' : 'hidden'
+					}`}
+				/>
 				<div
 					className={`${
 						toggle ? 'flex' : 'hidden'
@@ -43,6 +56,7 @@ const Navbar = () => {
 					<ul className='list-none flex flex-col justify-end items-center flex-1 '>
 						{navLinks.map((navLink, index) => (
 							<li
+								onClick={() => setToggle((prev) => !prev)}
 								key={index}
 								className={`font-poppins font-normal cursor-pointer text-[16px] ${
 									index === navLinks.length - 1 ? 'mb-0' : 'mb-4'
