@@ -1,7 +1,11 @@
+import React from 'react';
+
 import { close, logo, menu } from '../../assets';
 import { navLinks } from '../../constants';
 
 const Navbar = () => {
+	const [toggle, setToggle] = React.useState(false);
+
 	return (
 		<nav className='w-full flex py-6 justify-between items-center navbar'>
 			<img
@@ -22,6 +26,15 @@ const Navbar = () => {
 					</li>
 				))}
 			</ul>
+
+			<div className='sm:hidden flex flex-1 justify-end items-center'>
+				<img
+					src={toggle ? close : menu}
+					alt='menu image'
+					className='w-[24px] h-[24px] object-contain'
+					onClick={(prev) => setToggle(!prev)}
+				/>
+			</div>
 		</nav>
 	);
 };
