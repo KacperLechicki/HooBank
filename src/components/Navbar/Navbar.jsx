@@ -31,9 +31,26 @@ const Navbar = () => {
 				<img
 					src={toggle ? close : menu}
 					alt='menu image'
-					className='w-[24px] h-[24px] object-contain'
-					onClick={(prev) => setToggle(!prev)}
+					className='w-[20px] h-[20px] object-contain'
+					onClick={() => setToggle((prev) => !prev)}
 				/>
+
+				<div
+					className={`${
+						toggle ? 'flex' : 'hidden'
+					} p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
+					<ul className='list-none flex flex-col justify-end items-center flex-1'>
+						{navLinks.map((navLink, index) => (
+							<li
+								key={index}
+								className={`font-poppins font-normal cursor-pointer text-[16px] ${
+									index === navLinks.length - 1 ? 'mb-0' : 'mb-4'
+								} text-white`}>
+								<a href={`#${navLink.id}`}>{navLink.title}</a>
+							</li>
+						))}
+					</ul>
+				</div>
 			</div>
 		</nav>
 	);
