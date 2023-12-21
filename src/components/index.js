@@ -11,6 +11,7 @@ import Feedback from './Feedback/Feedback';
 import FeedbackCard from './FeedbackCard/FeedbackCard';
 import Clients from './Clients/Clients';
 import CTA from './CTA/CTA';
+import Footer from './Footer/Footer';
 
 export {
 	Navbar,
@@ -26,4 +27,5 @@ export {
 	FeedbackCard,
 	Clients,
 	CTA,
+	Footer,
 };

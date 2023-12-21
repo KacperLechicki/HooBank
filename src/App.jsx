@@ -11,6 +11,7 @@ import {
 	Feedback,
 	Clients,
 	CTA,
+	Footer,
 } from './components';
 
 const App = () => {
@@ -66,6 +67,7 @@ const App = () => {
 							<Feedback />
 							<Clients />
 							<CTA />
+							<Footer />
 						</div>
 					</div>
 				</div>

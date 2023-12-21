@@ -4,10 +4,10 @@ import Button from '../Button/Button';
 
 const CTA = () => (
 	<section
-		className={`${styles.flexCenter} mt-10 ${styles.padding} sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}>
+		className={`${styles.flexCenter} mt-10 sm:px-12 px-3 py-12 sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}>
 		<div className='flex flex-1 flex-col'>
 			<h2
-				className={`font-poppins font-semibold xs:text-[48px] text-[40px] text-white w-full text-center ss:text-left leading-[56px]`}>
+				className={`font-poppins font-semibold ss:text-[40px] text-[32px] text-white w-full text-center ss:text-left leading-[48px]`}>
 				Let&apos;s try our service now!
 			</h2>
 			<p

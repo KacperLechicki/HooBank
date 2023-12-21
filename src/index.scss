@@ -25,7 +25,7 @@ body {
 }
 
 section {
-	scroll-margin-top: 90px;
+	scroll-margin-top: 110px;
 }
 
 .text-gradient {
@@ -125,10 +125,6 @@ section {
 .feature-card:hover {
 	background: rgba($color: white, $alpha: 0.1);
 	box-shadow: var(--card-shadow);
-}
-
-.feedback-container .feedback-card:last-child {
-	margin-right: 0px;
 }
 
 .feedback-card {
