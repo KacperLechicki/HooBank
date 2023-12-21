@@ -3,11 +3,11 @@ import { stats } from '../../constants';
 import './Stats.scss';
 
 const Stats = () => (
-	<section className={`${styles.flexCenter} flex-row flex-wrap sm:mb-20 mb-6`}>
+	<section className={`${styles.flexCenter} flex-row flex-wrap mb-5`}>
 		{stats.map((stat, index) => (
 			<div
 				key={index}
-				className={`flex flex-1 justify-start items-center flex-row m-3 min-w-[300px]`}>
+				className={`flex flex-1 justify-center ss:justify-start items-center flex-row m-3 min-w-[300px]`}>
 				<h4 className='font-poppins flex-semibold xs:text-[36px] text-[26px] xs:leading-[53px] leading-[43px] text-white'>
 					{stat.value}
 				</h4>
