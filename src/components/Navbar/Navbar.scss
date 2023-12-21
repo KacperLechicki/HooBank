@@ -18,3 +18,14 @@
 		}
 	}
 }
+
+.nav-bg {
+	background: rgba($color: #0f0f1d, $alpha: 1);
+
+	background: linear-gradient(
+		64.18% 64.18% at 71.16% 35.69%,
+		#171726 55.12%,
+		#151523 71.54%,
+		#0f0f1d 100%
+	);
+}

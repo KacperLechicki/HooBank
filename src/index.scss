@@ -18,6 +18,16 @@
 	scroll-behavior: smooth;
 }
 
+body {
+	min-height: 100vh;
+	--tw-bg-opacity: 1;
+	background-color: rgb(0 4 15 / var(--tw-bg-opacity));
+}
+
+section {
+	scroll-margin-top: 90px;
+}
+
 .text-gradient {
 	background: radial-gradient(
 		64.18% 64.18% at 71.16% 35.69%,

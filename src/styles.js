@@ -11,6 +11,7 @@ const styles = {
 
 	paddingX: 'sm:px-16 px-6',
 	paddingY: 'sm:py-16 py-6',
+	paddingTY: 'sm:pt-16 pt-6',
 	padding: 'sm:px-16 px-6 sm:py-12 py-4',
 
 	marginX: 'sm:mx-16 mx-6',
@@ -18,8 +19,8 @@ const styles = {
 };
 
 export const layout = {
-	section: `flex md:flex-row flex-col ${styles.paddingY}`,
-	sectionReverse: `flex md:flex-row flex-col-reverse ${styles.paddingY}`,
+	section: `flex justify-between md:flex-row flex-col mt-10 ${styles.paddingTY}`,
+	sectionReverse: `flex justify-between md:flex-row flex-col-reverse mt-10 ${styles.paddingTY}`,
 
 	sectionImgReverse: `flex-1 flex ${styles.flexCenter} md:mr-10 mr-0 md:mt-0 mt-10 relative`,
 	sectionImg: `flex-1 flex ${styles.flexCenter} md:ml-10 ml-0 md:mt-0 mt-10 relative`,

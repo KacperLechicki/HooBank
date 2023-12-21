@@ -16,7 +16,7 @@ const Navbar = () => {
 	}, [toggle]);
 
 	return (
-		<nav className='w-full flex py-6 justify-between items-center navbar'>
+		<nav className='fixed sm:px-16 px-6 top-0 left-0 w-full flex py-6 justify-between items-center navba z-[10] nav-bg border-b-solid border-b-2 border-b-slate-800/50'>
 			<img
 				src={logo}
 				alt='HooBank logo'

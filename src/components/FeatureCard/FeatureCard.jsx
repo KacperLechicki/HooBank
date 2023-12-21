@@ -4,12 +4,17 @@ import styles from '../../styles';
 
 const FeatureCard = ({ icon, title, content, index }) => (
 	<div
-		className={`flex flex-row p-6 rounded-[20px] ${
+		className={`flex w-full flex-row py-6 px-3 rounded-[20px] border-double border-4 border-slate-800 ${
 			index !== features.length - 1 ? 'mb-6' : 'mb-0'
 		} feature-card`}>
 		<div
 			className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}>
-			<img src={icon} alt='icon' className='w-[50%] h-[50%] object-contain' />
+			<img
+				src={icon}
+				alt='icon'
+				className='w-[50%] h-[50%] object-contain'
+				loading='lazy'
+			/>
 		</div>
 		<div className='flex flex-1 flex-col ml-5'>
 			<h4 className='font-poppins font-semibold text-white text-[18px] leading-[23px] mb-1'>
