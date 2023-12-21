@@ -13,7 +13,8 @@ const Hero = () => (
 					className='w-[32px] h-[32px]'
 					loading='lazy'
 				/>
-				<p className={`${styles.paragraph} ml-2`}>
+				<p
+					className={`font-poppins font-normal text-dimWhite ml-2 mb-0 text-[16px]`}>
 					<span className='text-white'>20%</span> Discount For{' '}
 					<span className='text-white'>1 month</span> Account
 				</p>

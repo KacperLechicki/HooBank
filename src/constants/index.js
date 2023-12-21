@@ -8,7 +8,6 @@ import {
 	twitter,
 	airbnb,
 	binance,
-	coinbase,
 	dropbox,
 	send,
 	shield,
@@ -200,10 +199,6 @@ export const clients = [
 	{
 		id: 'client-2',
 		logo: binance,
-	},
-	{
-		id: 'client-3',
-		logo: coinbase,
 	},
 	{
 		id: 'client-4',

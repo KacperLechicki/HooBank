@@ -3,7 +3,7 @@ import styles, { layout } from '../../styles';
 import Button from '../Button/Button';
 
 const CardDeal = () => (
-	<section className={`${layout.section}`}>
+	<section className={`${layout.section} relative`}>
 		<div className={`${layout.sectionInfo}`}>
 			<h2 className={`${styles.heading2} text-center ss:text-left`}>
 				Find a better card deal <br className='sm:block hidden' /> in few easy
@@ -21,6 +21,8 @@ const CardDeal = () => (
 		<div className={`${layout.sectionImg}`}>
 			<img src={card} alt='card' className='w-[100%] h-[100%]' loading='lazy' />
 		</div>
+
+		<div className='absolute z-[0] w-[30%] h-[30%] -right-[40%] rounded-full blue__gradient' />
 	</section>
 );
 

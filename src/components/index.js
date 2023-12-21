@@ -7,6 +7,10 @@ import Button from './Button/Button';
 import FeatureCard from './FeatureCard/FeatureCard';
 import Billing from './Billing/Billing';
 import CardDeal from './CardDeal/CardDeal';
+import Feedback from './Feedback/Feedback';
+import FeedbackCard from './FeedbackCard/FeedbackCard';
+import Clients from './Clients/Clients';
+import CTA from './CTA/CTA';
 
 export {
 	Navbar,
@@ -18,4 +22,8 @@ export {
 	FeatureCard,
 	Billing,
 	CardDeal,
+	Feedback,
+	FeedbackCard,
+	Clients,
+	CTA,
 };

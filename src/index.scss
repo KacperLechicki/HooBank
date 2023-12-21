@@ -117,8 +117,13 @@ section {
 	}
 }
 
+.feature-card {
+	background: transparent;
+	transition: background 0.2s, box-shadow 0.2s;
+}
+
 .feature-card:hover {
-	background: var(--black-gradient);
+	background: rgba($color: white, $alpha: 0.1);
 	box-shadow: var(--card-shadow);
 }
 
@@ -128,10 +133,12 @@ section {
 
 .feedback-card {
 	background: transparent;
+	transition: background 0.2s, box-shadow 0.2s;
 }
 
 .feedback-card:hover {
-	background: var(--black-gradient);
+	background: rgba($color: white, $alpha: 0.1);
+	box-shadow: var(--card-shadow);
 }
 
 .blue__gradient {
@@ -161,4 +168,9 @@ section {
 ::-webkit-scrollbar-thumb {
 	border-radius: 5px;
 	background: #37838b;
+}
+
+.loading-border {
+	--tw-border-opacity: 1;
+	border-color: #4fbcd0;
 }

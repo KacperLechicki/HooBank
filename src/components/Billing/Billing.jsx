@@ -2,7 +2,7 @@ import { apple, bill, google } from '../../assets';
 import styles, { layout } from '../../styles';
 
 const Billing = () => (
-	<section id='product' className={`${layout.sectionReverse} md:mt-0 mt-10`}>
+	<section id='product' className={`${layout.sectionReverse} mt-10 relative`}>
 		<div className={`${layout.sectionImgReverse}`}>
 			<img
 				src={bill}
@@ -10,10 +10,9 @@ const Billing = () => (
 				loading='lazy'
 				className='w-[100%] h-[100%] relative z-[5]'
 			/>
-
-			<div className='absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient' />
-			<div className='absolute z-[0] -left-1/2 bottom-0 w-[50%] h-[50%] rounded-full pink__gradient' />
 		</div>
+
+		<div className='absolute z-[0] w-[60%] h-[30%] -left-[30%] rounded-full pink__gradient' />
 
 		<div className={`${layout.sectionInfo}`}>
 			<h2 className={`${styles.heading2} text-center ss:text-left`}>
@@ -21,7 +20,7 @@ const Billing = () => (
 				invoicing.
 			</h2>
 			<p
-				className={`${styles.paragraph} ss:max-w-[470px] w-full mt-5 text-center ss:text-left`}>
+				className={`${styles.paragraph}  w-full mt-5 text-center ss:text-left`}>
 				Elit enim sed massa etiam. Mauris eu adipiscing ultrices amatodio aenean
 				neque. Fusce ipsum orci rhoncus alliporttitor integer platea placerat.
 			</p>
